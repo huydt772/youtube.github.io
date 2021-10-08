@@ -1,0 +1,64 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #030303;
+    --border-color: #dbdbdb;
+    --hover-color: #f2f2f2;
+
+    --header-height: 56px;
+    --width-sidebar: 240px;
+    --width-sub-sidebar: 72px;
+    --scrollbar-color: #d9d9d9;
+    --main-scrollbar-color: #606060;
+    --container-color:#f9f9f9;
+    --header-color: rgba(255, 255, 255, 0.98);
+}
+
+/* html::-webkit-scrollbar {
+    width: 8px;
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--container-color);
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--main-scrollbar-color);
+    border-radius: 10px;
+} */
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', Arial, sans-serif;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: FadeIn linear 0.2s;
+    display: none;
+}
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
